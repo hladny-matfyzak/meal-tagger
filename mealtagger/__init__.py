@@ -29,6 +29,9 @@ def tag(desc):
     desc = preprocess(desc)
     tags = []
     for word in desc.split(' '):
+        if len(word) < 3:
+            continue
+
         lemm = lemmsk.lemmatize(unicode(word))
         if lemmsk.is_lemma(lemm):
             tags.append(lemm)
