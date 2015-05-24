@@ -7,4 +7,4 @@ install:
       - pip install -e .
 script:
       - flake8 --ignore=E731,E226 .
-      - python test_lemmsk.py
+      - python test_mealtagger.py
