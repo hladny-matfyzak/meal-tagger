@@ -32,7 +32,7 @@ def tag(desc):
         if len(word) < 3:
             continue
 
-        lemm = lemmsk.lemmatize(unicode(word))
+        lemm = lemmsk.lemmatize(word)
         if lemmsk.is_lemma(lemm):
             tags.append(lemm)
 

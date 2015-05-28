@@ -10,6 +10,9 @@ class TestSimpleLemmatization(unittest.TestCase):
         self.assertEqual(mealtagger.tag('Palacinky s džemom'),
                          ['palacinka', 'džem'])
 
+        self.assertEqual(mealtagger.tag('Vypr.syr 130g'),
+                         ['vyprážaný', 'syr'])
+
 
 if __name__ == '__main__':
     unittest.main()
